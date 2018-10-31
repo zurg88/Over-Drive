@@ -1,0 +1,233 @@
+@import "vars";
+
+
+/*==========  Desktop First  ==========*/
+
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
+	.top-menu,
+	.main-menu {
+		width: 900px;
+		margin: 0 auto;
+		padding: 15px;
+	}
+	.menu-item {
+		padding: 12px 40px 10px;
+	}
+
+	.caption {
+		left: 13%;
+	}
+	.contact-form {
+		font-size: 12px;
+		input {
+			padding-left: 3px;
+		}
+		select {
+			line-height: 1;
+		}
+	}
+	.contact-user {
+		padding: 0;
+	}
+	.show-more {
+		bottom: 1400px;
+	}
+
+}
+
+// ≥992px
+@include media-breakpoint-down(md) {
+	.top-menu,
+	.main-menu {
+		width: 100%;
+		margin: 0 auto;
+		padding: 0;
+	}
+	.menu-item {
+		padding: 12px 20px 10px;
+	}
+	.contacts-button {
+		max-width: 180px;
+		display: none;
+	}
+		
+	.welding-description,
+	.oil-change-description,
+	.repair-description {
+		background-size: 100%;
+	}
+	.show-more {
+		bottom: 1845px;
+	}
+
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+	.top-menu {
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+	}
+
+	.mobile-menu-toggle {
+		display: flex;
+		background-color: #333;
+		margin: 25px;
+		height: 45px;
+		left: 80%;
+	}
+
+	.main-menu {
+		flex-direction: column;
+	}
+
+	.menu-item {
+		display: none;
+		background-color: rgba(196, 113, 53, 1);
+		width: 100%;
+		line-height: 2;
+	}
+
+	.contact-form-wrap {
+		margin-top: 60px;
+		width: 90%;
+	}
+
+	.contact-info-button {
+		margin-top: 7px;
+	}
+
+	.caption {
+		width: 100%;
+		left: 0;
+		bottom: 5%;
+	}
+
+	.red-more-arrow {
+		bottom: 23%;
+	}
+
+	.welding-section-row {
+		flex-direction: column-reverse;
+	}
+
+	.programs-item {
+		margin-top: 40px;
+	}
+
+	.programs-item-description {
+		padding: 30px;
+	}
+
+	.faq {
+		margin-top: 0;
+	}
+	
+	
+	.car-brands {
+		display: none;
+	}
+	.mobile-show-price {
+		display: block;
+	}
+
+	.table-repairs {
+		display: none;
+	}
+	
+	.welding-section,
+	.oil-change-section,
+	.car-repair-section {
+		max-height: 100%;
+	}
+	.show-more {
+		display: none;
+	}
+	.footer-contact-form {
+		padding: 25px 0 0 50px!important;
+		background-color: rgb(171, 172, 173);
+		margin-bottom: 30px;
+	}
+}
+
+// ≥576px
+@include media-breakpoint-down(xs) {
+	.address,
+	.phone {
+		color: #000;
+		line-height: 2;
+		font-weight: 800;
+	}
+
+	.slick-list {
+		height: 600px;
+	}
+	.slick-track {
+		height: 500px;
+		margin-top: 135px;
+	}
+	.caption {
+		left: 0;
+		bottom: 40%;
+	}
+
+	.main-menu {
+		width: 85%;
+	}
+
+	.main-menu-scroll {
+		padding: 0 0 0 50px !important;
+		background-color: transparent;
+	}
+
+	.red-more-arrow {
+		bottom: 1%;
+	}
+
+	.contact-form-wrap {
+		background-image: none;
+		padding-bottom: 35px;
+	}
+
+	.contact-form {
+		flex-direction: column;
+		padding: 0 25px 0 0;
+	}
+	.contact-user-info,
+	.contact-info {
+		margin: 0;
+	}
+
+	.contact-user {
+		width: 100%;
+	}
+
+	.welding-section,
+	.oil-change-section,
+	.car-repair-section {
+		max-height: 100%;
+	}
+
+	.welding-description,
+	.oil-change-description,
+	.repair-description {
+		background-size: 100%;
+	}
+
+	.show-more {
+		display: none;
+	}
+	.mobile-show-price {
+		display: block;
+	}
+
+	.table-repairs {
+		display: none;
+	}
+	.footer-contact-form {
+		padding: 25px 0 0 0!important;
+	}
+}
